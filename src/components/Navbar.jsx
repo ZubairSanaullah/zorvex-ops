@@ -44,32 +44,32 @@ const Navbar = () => {
                 padding: 8, boxShadow: '0 4px 12px rgba(15,127,79,0.3)',
                 flexShrink: 0,
               }}>
-                <img src="/logo.png" alt="Logo" style={{ width:'100%', height:'100%', objectFit:'contain', filter:'brightness(0) invert(1)' }} />
+                <img src="/logo.png" alt="Logo" />
               </div>
-              <span style={{ fontFamily:'Outfit,sans-serif', fontWeight:900, fontSize:'1.35rem', letterSpacing:'-0.04em', color:'#0F172A' }}>
-                Zorvex<span style={{ color:'#0F7F4F' }}>Ops</span>
+              <span style={{ fontFamily: 'Outfit,sans-serif', fontWeight: 900, fontSize: '1.35rem', letterSpacing: '-0.04em', color: '#0F172A' }}>
+                Zorvex<span style={{ color: '#0F7F4F' }}>Ops</span>
               </span>
             </a>
 
             {/* Desktop Links */}
-            <div className="hide-mobile" style={{ display:'flex', alignItems:'center', gap:40 }}>
+            <div className="hide-mobile" style={{ display: 'flex', alignItems: 'center', gap: 40 }}>
               {links.map(l => (
                 <a key={l} href={`#${l.toLowerCase()}`} className="nav-link">{l}</a>
               ))}
             </div>
 
             {/* CTA + Hamburger */}
-            <div style={{ display:'flex', alignItems:'center', gap:16 }}>
-              <a href="#contact" className="btn btn-primary hide-mobile" style={{ padding:'12px 28px', fontSize:'0.9rem' }}>
+            <div style={{ display: 'flex', alignItems: 'center', gap: 16 }}>
+              <a href="#contact" className="btn btn-primary hide-mobile" style={{ padding: '12px 28px', fontSize: '0.9rem' }}>
                 Get Started
               </a>
               <button onClick={() => setMenuOpen(true)} className="hide-desktop" style={{
-                width:44, height:44, borderRadius:12, border:'1.5px solid #E2EDE8',
-                background:'transparent', display:'flex', alignItems:'center', justifyContent:'center',
-                color:'#0F172A', cursor:'pointer',
+                width: 44, height: 44, borderRadius: 12, border: '1.5px solid #E2EDE8',
+                background: 'transparent', display: 'flex', alignItems: 'center', justifyContent: 'center',
+                color: '#0F172A', cursor: 'pointer',
               }}>
                 <svg width="22" height="22" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round">
-                  <line x1="3" y1="6" x2="19" y2="6"/><line x1="3" y1="12" x2="19" y2="12"/><line x1="3" y1="18" x2="19" y2="18"/>
+                  <line x1="3" y1="6" x2="19" y2="6" /><line x1="3" y1="12" x2="19" y2="12" /><line x1="3" y1="18" x2="19" y2="18" />
                 </svg>
               </button>
             </div>
@@ -82,21 +82,21 @@ const Navbar = () => {
         {menuOpen && (
           <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} className="mobile-menu" style={{ zIndex: 1001 }}>
             <button onClick={() => setMenuOpen(false)} style={{
-              position:'absolute', top:24, right:24, width:48, height:48,
-              borderRadius:14, border:'1.5px solid #E2EDE8', background:'transparent',
-              display:'flex', alignItems:'center', justifyContent:'center', cursor:'pointer', color:'#0F172A',
+              position: 'absolute', top: 24, right: 24, width: 48, height: 48,
+              borderRadius: 14, border: '1.5px solid #E2EDE8', background: 'transparent',
+              display: 'flex', alignItems: 'center', justifyContent: 'center', cursor: 'pointer', color: '#0F172A',
             }}>
               <svg width="24" height="24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round">
-                <line x1="5" y1="5" x2="19" y2="19"/><line x1="19" y1="5" x2="5" y2="19"/>
+                <line x1="5" y1="5" x2="19" y2="19" /><line x1="19" y1="5" x2="5" y2="19" />
               </svg>
             </button>
-            {links.map((l,i) => (
+            {links.map((l, i) => (
               <motion.a key={l} href={`#${l.toLowerCase()}`} className="mobile-nav-link"
-                initial={{ opacity:0, y:20 }} animate={{ opacity:1, y:0 }} transition={{ delay: i*0.08 }}
+                initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: i * 0.08 }}
                 onClick={() => setMenuOpen(false)}
               >{l}</motion.a>
             ))}
-            <motion.a href="#contact" className="btn btn-primary" initial={{ opacity:0 }} animate={{ opacity:1 }} transition={{ delay: 0.4 }} onClick={() => setMenuOpen(false)}>
+            <motion.a href="#contact" className="btn btn-primary" initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 0.4 }} onClick={() => setMenuOpen(false)}>
               Book Consultation
             </motion.a>
           </motion.div>
