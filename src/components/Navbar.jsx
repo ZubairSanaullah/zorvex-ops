@@ -38,13 +38,11 @@ const Navbar = () => {
             {/* Logo */}
             <a href="#" style={{ display: 'flex', alignItems: 'center', gap: 12 }}>
               <div style={{
-                width: 44, height: 44, borderRadius: 14,
-                background: 'linear-gradient(135deg,#0F7F4F,#22B573)',
+                width: 44, height: 44,
                 display: 'flex', alignItems: 'center', justifyContent: 'center',
-                padding: 8, boxShadow: '0 4px 12px rgba(15,127,79,0.3)',
                 flexShrink: 0,
               }}>
-                <img src="/logo.png" alt="Logo" />
+                <img src="/icons.svg" alt="Logo" style={{ width: '100%', height: '100%', objectFit: 'contain' }} />
               </div>
               <span style={{ fontFamily: 'Outfit,sans-serif', fontWeight: 900, fontSize: '1.35rem', letterSpacing: '-0.04em', color: '#0F172A' }}>
                 Zorvex<span style={{ color: '#0F7F4F' }}>Ops</span>

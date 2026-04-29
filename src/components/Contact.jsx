@@ -52,13 +52,9 @@ const Contact = () => {
 
                 <div style={{ marginTop: 48, paddingTop: 32, borderTop: '1px solid rgba(255,255,255,0.1)' }}>
                   <div style={{ fontSize: '0.8rem', fontWeight: 800, textTransform: 'uppercase', letterSpacing: '0.2em', color: 'rgba(255,255,255,0.5)', marginBottom: 12 }}>
-                    Trusted by 500+ companies
+                    Trusted by 10+ companies
                   </div>
-                  <div style={{ display: 'flex', alignItems: 'center', gap: 8 }}>
-                    {['A', 'B', 'C', 'D', 'E'].map((l, i) => (
-                      <div key={i} style={{ width: 36, height: 36, borderRadius: '50%', background: 'rgba(255,255,255,0.15)', border: '2px solid rgba(255,255,255,0.3)', display: 'flex', alignItems: 'center', justifyContent: 'center', color: '#fff', fontSize: '0.7rem', fontWeight: 900, marginLeft: i > 0 ? -10 : 0 }}>{l}</div>
-                    ))}
-                  </div>
+
                 </div>
               </div>
             </div>
