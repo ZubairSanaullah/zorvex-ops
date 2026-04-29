@@ -26,9 +26,9 @@ const Footer = () => {
         <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(220px, 1fr))', gap: '56px', marginBottom: 72 }}>
           {/* Brand col */}
           <div>
-            <div style={{ display: 'flex', alignItems: 'center', gap: 12, marginBottom: 24 }}>
-              <div style={{ width: 48, height: 48, display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0 }}>
-                <img src="/favicon.svg" alt="Logo" style={{ width: '100px', height: '100px', objectFit: 'contain' }} />
+            <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 24 }}>
+              <div style={{ width: 100, height: 100, display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0 }}>
+                <img src="./icons.png" alt="Logo" style={{ width: '100%', height: '100%', objectFit: 'contain' }} />
               </div>
               <span style={{ fontFamily: 'Outfit,sans-serif', fontWeight: 900, fontSize: '1.5rem', letterSpacing: '-0.04em' }}>
                 Zorvex<span style={{ color: '#22B573' }}>Ops</span>

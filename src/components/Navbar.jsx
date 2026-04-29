@@ -36,13 +36,13 @@ const Navbar = () => {
             transition: 'all 0.5s cubic-bezier(0.16,1,0.3,1)',
           }}>
             {/* Logo */}
-            <a href="#" style={{ display: 'flex', alignItems: 'center', gap: 12 }}>
+            <a href="#" style={{ display: 'flex', alignItems: 'center', gap: 8 }}>
               <div style={{
-                width: 44, height: 44,
+                width: 60, height: 60,
                 display: 'flex', alignItems: 'center', justifyContent: 'center',
                 flexShrink: 0,
               }}>
-                <img src="/icons.svg" alt="Logo" style={{ width: '100%', height: '100%', objectFit: 'contain' }} />
+                <img src="/icons.png" alt="Logo" style={{ width: '100%', height: '100%', objectFit: 'contain' }} />
               </div>
               <span style={{ fontFamily: 'Outfit,sans-serif', fontWeight: 900, fontSize: '1.35rem', letterSpacing: '-0.04em', color: '#0F172A' }}>
                 Zorvex<span style={{ color: '#0F7F4F' }}>Ops</span>
