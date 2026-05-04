@@ -37,8 +37,7 @@ const Contact = () => {
                 <p style={{ color: 'rgba(255,255,255,0.75)', marginBottom: 56, lineHeight: 1.8 }}>Connect with our consultants to design your operational blueprint.</p>
 
                 {[
-                  { icon: '📧', l: 'Email', v: 'hello@zorvexops.com' },
-                  { icon: '📞', l: 'Direct Line', v: '+92 317 4897063' },
+                  { icon: '📧', l: 'Email', v: 'connect@zorvexops.com' },
                   { icon: '📍', l: 'Global HQ', v: 'Lahore, Punjab, Pakistan' },
                 ].map((item, i) => (
                   <div key={i} className="contact-info-item">
