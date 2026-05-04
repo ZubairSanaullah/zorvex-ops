@@ -71,8 +71,7 @@ const Footer = () => {
             <div style={{ display: 'flex', flexDirection: 'column', gap: 20 }}>
               {[
                 { icon: '📍', val: 'Lahore, Punjab, Pakistan' },
-                { icon: '📧', val: 'hello@zorvexops.com' },
-                { icon: '📞', val: '+92 317 4897063' },
+                { icon: '📧', val: 'connect@zorvexops.com' },
               ].map((item, i) => (
                 <div key={i} style={{ display: 'flex', gap: 14, alignItems: 'flex-start' }}>
                   <span style={{ fontSize: '1rem', flexShrink: 0, marginTop: 2 }}>{item.icon}</span>
